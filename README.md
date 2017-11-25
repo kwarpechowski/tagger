@@ -1,0 +1,1 @@
+* `node download.js` - przetwarza plik `text.txt` do pliku `data.json`

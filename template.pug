@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Raport</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    body
+        h1 Raport - #{sum} pozycji
+        div tagger:
+            a(href="http://clarin.pelcra.pl/tools/tagger/") A PoS tagger trained on the 1M NKJP corpus and Morfeusz
+        ul.categories
+            each val in categories
+                li
+                    h2 #{val} (#{len[val]})
+                    ul.items
+                        each v in elements[val]
+                            li #{v[0]}  (#{v[1]})
+</html>
